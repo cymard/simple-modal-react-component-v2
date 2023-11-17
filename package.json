@@ -1,28 +1,19 @@
 {
   "name": "simple-modal-react-component-v2",
-  "version": "0.1.5",
+  "version": "0.1.8",
   "private": false,
+  "main": "dist/index.js",
   "dependencies": {
-    "@testing-library/jest-dom": "^5.17.0",
-    "@testing-library/react": "^13.4.0",
-    "@testing-library/user-event": "^13.5.0",
+    "@babel/cli": "^7.23.0",
     "react": "^18.2.0",
     "react-dom": "^18.2.0",
     "react-scripts": "5.0.1",
-    "sass": "^1.69.5",
-    "web-vitals": "^2.1.4"
+    "sass": "^1.69.5"
   },
   "scripts": {
     "start": "react-scripts start",
-    "build": "rm -rf dist && NODE_ENV=production babel src/lib --out-dir dist --copy-files",
-    "test": "react-scripts test",
+    "build": "rm -rf dist && NODE_ENV=production babel src --out-dir dist --copy-files",
     "eject": "react-scripts eject"
-  },
-  "eslintConfig": {
-    "extends": [
-      "react-app",
-      "react-app/jest"
-    ]
   },
   "browserslist": {
     "production": [
@@ -37,12 +28,8 @@
     ]
   },
   "devDependencies": {
-    "@babel/cli": "^7.23.0",
-    "@babel/core": "^7.23.3",
+    "@babel/plugin-transform-react-jsx": "^7.22.15",
     "@babel/preset-env": "^7.23.3",
-    "css-loader": "^6.8.1",
-    "node-sass": "^7.0.3",
-    "sass-loader": "^13.3.2",
-    "style-loader": "^3.3.3"
+    "@babel/preset-react": "^7.23.3"
   }
 }

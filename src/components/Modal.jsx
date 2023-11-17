@@ -1,4 +1,5 @@
 import React, { useRef } from 'react';
+import './modal.scss';
 
 const Modal = ({isOpen, onClose, onExternalClick, children}) => {
     const paragraphRef = useRef(null);
@@ -29,7 +30,7 @@ const Modal = ({isOpen, onClose, onExternalClick, children}) => {
     return (
         <>
             { isOpen &&
-                <div onClick={e => handleExternalClick(e)}>
+                <div onClick={e => handleExternalClick(e)} className="modalContent">
                     <p ref={paragraphRef}>{children}</p>
                     <button ref={buttonRef} onClick={handleClose}></button>
                 </div>
