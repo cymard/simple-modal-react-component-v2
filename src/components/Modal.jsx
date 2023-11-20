@@ -1,5 +1,5 @@
 import React, { useRef } from 'react';
-import './modal.scss';
+import './modal.css';
 
 const Modal = ({isOpen, onClose, onExternalClick, children}) => {
     const paragraphRef = useRef(null);

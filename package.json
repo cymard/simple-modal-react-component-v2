@@ -1,20 +1,32 @@
 {
   "name": "simple-modal-react-component-v2",
-  "version": "0.1.8",
+  "version": "1.0.0",
+  "license": "MIT",
+  "description": "A simple modal component in React",
   "private": false,
   "main": "dist/index.js",
+  "author": "https://github.com/cymard",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/cymard/simple-modal-react-component-v2.git"
+  },
+  "homepage": "https://github.com/cymard/simple-modal-react-component-v2#readme",
+  "bugs": {
+    "url": "https://github.com/cymard/simple-react-modal-component/issues"
+  },
   "dependencies": {
-    "@babel/cli": "^7.23.0",
     "react": "^18.2.0",
     "react-dom": "^18.2.0",
-    "react-scripts": "5.0.1",
     "sass": "^1.69.5"
   },
   "scripts": {
-    "start": "react-scripts start",
-    "build": "rm -rf dist && NODE_ENV=production babel src --out-dir dist --copy-files",
-    "eject": "react-scripts eject"
+    "build": "rm -rf dist && NODE_ENV=production babel src --out-dir dist --copy-files && sass src/components/modal.scss dist/components/modal.css"
   },
+  "keywords": [
+    "react",
+    "modal",
+    "component"
+  ],
   "browserslist": {
     "production": [
       ">0.2%",
@@ -28,6 +40,7 @@
     ]
   },
   "devDependencies": {
+    "@babel/cli": "^7.23.0",
     "@babel/plugin-transform-react-jsx": "^7.22.15",
     "@babel/preset-env": "^7.23.3",
     "@babel/preset-react": "^7.23.3"
